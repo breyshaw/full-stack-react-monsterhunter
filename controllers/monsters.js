@@ -15,7 +15,11 @@ function index(req, res) {
 function show(req, res) {
     Monster.findById(req.params.id)
         .then(monster => {
+            if(monster){
             res.json(monster)
+            } else {
+                res.send('Monster not found!')
+            }
         })
 }
 
