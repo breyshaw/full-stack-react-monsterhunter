@@ -1,9 +1,10 @@
-import { Mongoose } from "mongoose";
+import mongoose from "mongoose"
 
 const Schema = mongoose.Schema
 
 const monsterSchema = new Schema({
     name: String,
+    imgUrl: String,
     type: {type: String, default: 'Flying Wyvern'},
     topweakness: 'String'
 },{

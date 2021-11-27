@@ -1,10 +1,9 @@
 import { Router } from 'express'
 const router = Router()
+import * as monstersApiController from '../../controllers/monsters.js'
 
 /* GET users listing. */
-router.get('/', function(req, res) {
-  res.send('respond with a resource')
-})
+router.get('/', monstersApiController.index)
 
 export {
   router

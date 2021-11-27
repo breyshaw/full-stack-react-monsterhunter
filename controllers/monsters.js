@@ -1,7 +1,10 @@
 import { Monster } from "../models/monster.js";
 
 function index(req, res) {
-
+    Monster.find({})
+    .then(monsters => {
+        res.json(monsters)
+    })
 }
 
 function show(req,res) {
