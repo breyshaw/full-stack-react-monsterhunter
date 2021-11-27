@@ -23,6 +23,7 @@ function update(req,res) {
 export {
     index,
     show,
+    create,
     deleteMonster as delete,
     update
 }
